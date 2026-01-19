@@ -1,0 +1,84 @@
+╔═══════════════════════════════════════════════════════════════════════╗
+║              🔒 BROWSER BLOCKER - START HERE 🔒                       ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+📌 AI 2 PROGRAME DISPONIBILE:
+
+═══════════════════════════════════════════════════════════════════════
+
+🥇 RECOMANDAT: FĂRĂ PAROLĂ ADMIN (CEL MAI SIMPLU!)
+═══════════════════════════════════════════════════════════════════════
+
+✅ NU necesită parolă de Administrator
+✅ Dublu-click și gata!
+
+👉 Dublu-click pe: Browser_Blocker_NoAdmin.vbs
+
+Ce face:
+- Setează proxy invalid în browsere
+- Browserele pornesc dar NU au internet
+- Monitorizează și închide browserele când pornesc
+- Perfect pentru productivitate sau control parental simplu
+
+Limitare: Un user tehnic poate schimba manual setările
+
+
+═══════════════════════════════════════════════════════════════════════
+
+🥈 VARIANTA PUTERNICĂ: CU WINDOWS FIREWALL
+═══════════════════════════════════════════════════════════════════════
+
+⚠️ NECESITĂ parolă de Administrator
+✅ Blocare la nivel de firewall (99% sigură)
+
+👉 Dublu-click pe: Browser_Blocker.vbs
+
+Ce face:
+- Modifică Windows Firewall
+- Blocare completă, imposibil de ocolit fără admin
+- Perfect pentru control parental strict
+- Necesită să aprobi UAC (cerere Administrator)
+
+Limitare: Trebuie să știi parola de Administrator
+
+
+═══════════════════════════════════════════════════════════════════════
+
+🤔 CARE SĂ ALEG?
+═══════════════════════════════════════════════════════════════════════
+
+🟢 Folosește FĂRĂ ADMIN dacă:
+   - Nu ai parola de Administrator
+   - Vrei blocare rapidă pentru productivitate
+   - Copilul nu are cunoștințe tehnice
+
+🔴 Folosește CU ADMIN dacă:
+   - Ai parolă de Administrator
+   - Vrei blocare 100% sigură
+   - Control parental strict
+
+
+═══════════════════════════════════════════════════════════════════════
+
+📖 MAI MULTE DETALII:
+═══════════════════════════════════════════════════════════════════════
+
+👉 README_NoAdmin.md - Detalii despre versiunea fără admin
+👉 README.md - Detalii despre versiunea cu Windows Firewall
+👉 INSTRUCTIUNI.txt - Instrucțiuni complete
+
+
+═══════════════════════════════════════════════════════════════════════
+
+🎯 QUICK START (RECOMANDAT):
+═══════════════════════════════════════════════════════════════════════
+
+1. Dublu-click: Browser_Blocker_NoAdmin.vbs
+2. Dacă îți cere să instaleze ceva, apasă "Yes"
+3. Apasă butonul roșu "BLOCK BROWSERS"
+4. Gata! Browserele nu vor mai avea internet!
+
+
+═══════════════════════════════════════════════════════════════════════
+
+Enjoy! 🎉
