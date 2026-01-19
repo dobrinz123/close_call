@@ -1,0 +1,176 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║          🚨 GHID DE REPARARE BROWSER - PAS CU PAS 🚨                 ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+Browserul tău e blocat cu un proxy invalid. Urmează EXACT acești pași:
+
+
+═══════════════════════════════════════════════════════════════════════
+METODA 1: SCRIPT AUTOMAT (CEA MAI SIMPLĂ)
+═══════════════════════════════════════════════════════════════════════
+
+1. Găsește fișierul: FORCE_UNBLOCK.py
+2. Dublu-click pe el
+3. Apasă ENTER când îți cere
+4. Așteaptă să termine
+5. Încearcă să deschizi browser-ul
+
+Dacă nu merge, continuă cu METODA 2 ↓
+
+
+═══════════════════════════════════════════════════════════════════════
+METODA 2: RESETARE PROXY WINDOWS (GUARANTEED!)
+═══════════════════════════════════════════════════════════════════════
+
+Această metodă FUNCȚIONEAZĂ 100%!
+
+PAS 1: Deschide Setările Windows
+   • Apasă WIN + R pe tastatură
+   • Se deschide o fereastră mică "Run"
+   • Scrie EXACT: inetcpl.cpl
+   • Apasă ENTER
+
+PAS 2: Mergi la Connections
+   • Fereastra "Internet Properties" se deschide
+   • Click pe tab-ul "Connections" (sus, al 4-lea)
+
+PAS 3: LAN Settings
+   • Jos în fereastră, vezi un buton "LAN settings"
+   • Click pe "LAN settings"
+   • Se deschide fereastra "Local Area Network (LAN) Settings"
+
+PAS 4: DEBIFEAZĂ TOT
+   • Vezi 3 căsuțe:
+     □ Automatically detect settings
+     □ Use automatic configuration script
+     □ Use a proxy server for your LAN
+
+   • IMPORTANT: Fă astfel:
+     ☑ Automatically detect settings        ← BIFEAZĂ ASTA
+     ☐ Use automatic configuration script   ← DEBIFEAZĂ
+     ☐ Use a proxy server for your LAN      ← DEBIFEAZĂ (CEL MAI IMPORTANT!)
+
+PAS 5: Salvează
+   • Click "OK" în fereastra LAN Settings
+   • Click "OK" în fereastra Internet Properties
+
+PAS 6: Restart Browser
+   • Închide COMPLET browser-ul (X din colț)
+   • Așteaptă 5 secunde
+   • Deschide browser-ul din nou
+   • Încearcă să accesezi google.com
+
+✅ AR TREBUI SĂ MEARGĂ ACUM!
+
+
+═══════════════════════════════════════════════════════════════════════
+METODA 3: DIN BROWSER (CHROME/EDGE/BRAVE)
+═══════════════════════════════════════════════════════════════════════
+
+PAS 1: Deschide Browser-ul
+   • Chiar dacă nu merge internetul, deschide-l
+
+PAS 2: Mergi la Settings
+   • Click pe cele 3 puncte (⋮) din colțul dreapta-sus
+   • Click "Settings"
+
+PAS 3: Caută Proxy
+   • În Settings, vezi o bară de căutare sus
+   • Scrie: proxy
+   • Apare rezultat: "Open your computer's proxy settings"
+   • Click pe el
+
+PAS 4: Oprește Proxy-ul
+   • Te duce la setările Windows
+   • Sub "Manual proxy setup" vezi:
+     "Use a proxy server"
+   • Pune butonul pe OFF (dacă e ON)
+
+PAS 5: Restart browser și testează
+
+
+═══════════════════════════════════════════════════════════════════════
+METODA 4: FIREFOX (DACĂ FOLOSEȘTI FIREFOX)
+═══════════════════════════════════════════════════════════════════════
+
+PAS 1: Deschide Firefox
+
+PAS 2: Meniu
+   • Click pe ☰ (3 linii) dreapta sus
+   • Click "Settings"
+
+PAS 3: Network Settings
+   • Scroll jos până vezi "Network Settings"
+   • Click pe butonul "Settings..." lângă el
+
+PAS 4: Selectează "No proxy"
+   • Fereastra "Connection Settings" se deschide
+   • Selectează radio button-ul: ⦿ No proxy
+   • SAU selectează: ⦿ Use system proxy settings
+
+PAS 5: Salvează
+   • Click "OK"
+   • Restart Firefox
+
+
+═══════════════════════════════════════════════════════════════════════
+METODA 5: NUCLEAR (ULTIMA SOLUȚIE)
+═══════════════════════════════════════════════════════════════════════
+
+Dacă NIMIC nu merge, resetează COMPLET browser-ul:
+
+CHROME:
+   Settings → Reset settings → Restore settings to their original defaults
+
+EDGE:
+   Settings → Reset settings → Restore settings to their default values
+
+FIREFOX:
+   Help → More troubleshooting information → Refresh Firefox
+
+⚠️ ATENȚIE: Vei pierde extensii și setări personalizate!
+
+
+═══════════════════════════════════════════════════════════════════════
+DACĂ TOT NU MERGE
+═══════════════════════════════════════════════════════════════════════
+
+Problema poate fi:
+
+1. PROXY-UL E ÎN REGISTRY
+   Soluție: Rulează acest command în CMD:
+
+   reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 0 /f
+
+2. BROWSERUL E CORUPT
+   Soluție: Dezinstalează și reinstalează browser-ul
+
+3. DNS CACHE PROBLEM
+   Soluție: Deschide CMD și rulează:
+
+   ipconfig /flushdns
+
+
+═══════════════════════════════════════════════════════════════════════
+TESTARE
+═══════════════════════════════════════════════════════════════════════
+
+După ce aplici orice metodă:
+1. Închide COMPLET browser-ul
+2. Așteaptă 5 secunde
+3. Deschide browser-ul
+4. Încearcă google.com
+
+Dacă merge Google → REZOLVAT! ✅
+
+
+═══════════════════════════════════════════════════════════════════════
+CONTACT
+═══════════════════════════════════════════════════════════════════════
+
+Dacă NIMIC din asta nu merge, spune-mi:
+- Ce browser folosești?
+- Ce mesaj exact de eroare vezi?
+- Ce metodă ai încercat?
+
+Voi crea o soluție personalizată pentru tine!
