@@ -19,19 +19,23 @@ Un program simplu pentru Windows 10/11 care blochează accesul la internet al br
 
 ## 🚀 Utilizare
 
-### Mod Recomandat - Interfață Grafică
+### Mod Recomandat - Interfață Grafică (SIMPLU!)
 
-**Metoda 1: Click dreapta**
+**✨ METODA CEA MAI SIMPLĂ - Dublu-click:**
+
+1. **Dublu-click pe `Browser_Blocker.vbs`** (sau `Browser_Blocker_Launcher.bat`)
+2. Aprobă UAC prompt (cerere drepturi Administrator)
+3. Interfața grafică se deschide automat!
+
+Fișierele launcher (`*.vbs` și `*.bat`) cer automat drepturi de Administrator - nu trebuie să dai click dreapta!
+
+**Alternativ - Direct Python:**
 1. Click dreapta pe `browser_blocker.py`
-2. Selectează **"Run as Administrator"** sau **"Run with PowerShell"**
-3. O fereastră se va deschide cu 3 butoane:
+2. Selectează **"Run as Administrator"**
+3. Interfața se deschide cu 3 butoane:
    - 🚫 **BLOCK BROWSERS** - Blochează toate browserele
    - ✅ **UNBLOCK BROWSERS** - Deblochează browserele
    - 👁 **DRY RUN** - Vezi ce ar face fără a schimba nimic
-
-**Metoda 2: Dublu-click**
-- Dublu-click pe `browser_blocker.py` (dacă Python este asociat cu fișierele .py)
-- Dacă apare UAC prompt, aprobă drepturi Administrator
 
 ### Mod Avansat - Linie de Comandă
 
@@ -92,6 +96,18 @@ Interfața GUI oferă:
 - Regulile sunt identificate unic cu PID-ul procesului
 - Nu modifică configurația globală a firewall-ului
 - Nu necesită dependințe externe (doar Python standard library)
+
+## 📁 Fișiere Incluse
+
+- **`Browser_Blocker.vbs`** - Launcher recomandat (silent, fără fereastră command prompt)
+- **`Browser_Blocker_Launcher.bat`** - Launcher alternativ (batch script)
+- **`browser_blocker.py`** - Programul principal Python
+- **`README.md`** - Instrucțiuni de utilizare
+
+**Care să folosesc?**
+- 🥇 **Browser_Blocker.vbs** - Cel mai elegant, fără ferestre CMD
+- 🥈 **Browser_Blocker_Launcher.bat** - Simplu și rapid
+- 🥉 **browser_blocker.py** - Direct dacă știi să dai "Run as Administrator"
 
 ## 📝 Licență
 

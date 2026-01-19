@@ -1,0 +1,76 @@
+╔═══════════════════════════════════════════════════════════════════════╗
+║                      🔒 BROWSER BLOCKER 🔒                            ║
+║                   Instrucțiuni de Utilizare Rapidă                    ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+📋 CUM SĂ FOLOSEȘTI (SUPER SIMPLU):
+
+1. ✅ Dublu-click pe fișierul:  Browser_Blocker.vbs
+
+2. ✅ Aprobă cererea de Administrator (UAC prompt)
+
+3. ✅ O fereastră se deschide cu 3 butoane mari:
+
+   🚫 BLOCK BROWSERS      - Blochează Chrome, Edge, Firefox, Brave
+   ✅ UNBLOCK BROWSERS    - Deblochează toate browserele
+   👁 DRY RUN             - Testează fără a face modificări
+
+4. ✅ Apasă pe ce vrei!
+
+
+═══════════════════════════════════════════════════════════════════════
+
+📌 CE FACE PROGRAMUL:
+
+- Blochează accesul la internet al browserelor folosind Windows Firewall
+- Browserele pot rula, dar NU au acces la internet
+- Când închizi programul, totul revine la normal automat
+- Este sigur - nu modifică setări permanente
+
+
+═══════════════════════════════════════════════════════════════════════
+
+⚠️ IMPORTANT:
+
+✓ Funcționează doar pe Windows 10/11
+✓ Trebuie să ai Python instalat (3.6 sau mai nou)
+✓ Trebuie să aprobi cererea de Administrator (UAC)
+
+
+═══════════════════════════════════════════════════════════════════════
+
+❓ PROBLEME?
+
+PROBLEMĂ: "Python not found"
+SOLUȚIE: Instalează Python de pe python.org
+
+PROBLEMĂ: "Administrator privileges required"
+SOLUȚIE: Aprobă cererea UAC când apare
+
+PROBLEMĂ: Browser-ul încă are net
+SOLUȚIE: Unele browsere au mai multe versiuni instalate
+         Apasă BLOCK din nou după ce pornești browser-ul
+
+
+═══════════════════════════════════════════════════════════════════════
+
+🎯 PENTRU CE E UTIL:
+
+✅ Control parental - limitează accesul copiilor la internet
+✅ Productivitate - blochează distracțiile când lucrezi
+✅ Focus time - concentrare fără tentații de browsing
+✅ Test/studiu - elimină accesul temporar la resurse online
+
+
+═══════════════════════════════════════════════════════════════════════
+
+📁 FIȘIERE DISPONIBILE:
+
+🥇 Browser_Blocker.vbs              <- FOLOSEȘTE PE ASTA (recomandat)
+🥈 Browser_Blocker_Launcher.bat    <- Alternativă
+🥉 browser_blocker.py               <- Script Python (avansat)
+
+
+═══════════════════════════════════════════════════════════════════════
+
+Enjoy! 🎉
