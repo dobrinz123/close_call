@@ -265,7 +265,7 @@ class BrowserBlockerNoAdminGUI:
         info_frame = tk.Frame(self.root, bg="#ecf0f1")
         info_frame.pack(fill=tk.X, padx=10, pady=10)
 
-        info_text = "ℹ️ This tool blocks browsers by setting an invalid proxy. No admin password required!"
+        info_text = "ℹ️ This tool blocks internet by setting an invalid proxy. Browsers stay open but can't access the web!"
         info_label = tk.Label(
             info_frame,
             text=info_text,
@@ -369,21 +369,11 @@ class BrowserBlockerNoAdminGUI:
         self.status_label.config(text=text, fg=color)
 
     def monitor_browsers(self):
-        """Background thread to monitor browser processes and re-apply blocks."""
+        """Background thread to monitor browser processes (passive monitoring only)."""
         while not self.stop_monitoring:
-            # Check if any browser is running
-            for browser_name, process_names in BROWSER_PROCESSES.items():
-                if browser_name in self.blocked_browsers:
-                    for proc_name in process_names:
-                        for proc in psutil.process_iter(['name']):
-                            try:
-                                if proc.info['name'].lower() == proc_name.lower():
-                                    self.log(f"⚠️ Detected {browser_name} starting, terminating...")
-                                    proc.terminate()
-                            except (psutil.NoSuchProcess, psutil.AccessDenied):
-                                pass
-
-            time.sleep(2)  # Check every 2 seconds
+            # Just keep the thread alive, no longer terminating browsers
+            # Browsers will remain open but won't have internet due to invalid proxy
+            time.sleep(5)  # Check every 5 seconds (passive)
 
     def block_browsers_gui(self):
         """Handle Block button click."""
@@ -400,12 +390,13 @@ class BrowserBlockerNoAdminGUI:
             self.log("BLOCKING BROWSERS - Setting invalid proxy configuration...")
             self.log("=" * 70 + "\n")
 
-            # Step 1: Kill running browsers
-            self.log("Step 1: Terminating running browser processes...\n")
+            # Step 1: Kill running browsers (only once, to reload config)
+            self.log("Step 1: Closing browsers to apply new settings...\n")
             killed = kill_browser_processes()
             if killed:
                 for proc_name in killed:
-                    self.log(f"  ✓ Terminated: {proc_name}")
+                    self.log(f"  ✓ Closed: {proc_name}")
+                self.log("  ℹ️  Browsers closed temporarily to load new proxy settings")
                 self.log("")
             else:
                 self.log("  ℹ️ No browser processes were running\n")
@@ -447,11 +438,12 @@ class BrowserBlockerNoAdminGUI:
             self.log("=" * 70)
             self.log(f"✓ Successfully blocked {len(self.blocked_browsers)} browser(s)")
             self.log("=" * 70 + "\n")
-            self.log("🔒 Browsers will open but won't have internet access!")
-            self.log("🔒 Starting continuous monitoring...\n")
+            self.log("🔒 Browsers can now open but WON'T have internet access!")
+            self.log("🔒 They will show 'Can't connect to proxy server' errors.")
+            self.log("ℹ️  Browsers will work normally EXCEPT internet won't load.\n")
 
             self.is_blocking = True
-            self.update_status("🔴 Status: BROWSERS BLOCKED (Monitoring Active)", "#e74c3c")
+            self.update_status("🔴 Status: BROWSERS BLOCKED (No Internet)", "#e74c3c")
 
             # Start monitoring thread
             self.stop_monitoring = False
@@ -567,8 +559,9 @@ if __name__ == "__main__":
 #
 # How it works:
 # - Sets invalid proxy configuration in browser settings
+# - Closes browsers once to reload the new proxy settings
 # - Browsers will open normally but won't be able to access the internet
-# - Continuously monitors and terminates browsers when they start
+# - Browsers show "Can't connect to proxy server" or similar errors
 # - Click UNBLOCK to restore normal browser functionality
 #
 # Note: You need psutil installed. If not installed, run:

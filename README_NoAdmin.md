@@ -47,10 +47,11 @@ python browser_blocker_no_admin.py
 - Browserele încarcă setările și încearcă să se conecteze prin proxy-ul inexistent
 - Rezultat: Browser-ul pornește, dar **nu are acces la internet!**
 
-### 2. **Monitorizare Continuă**
-- Programul monitorizează procesele care rulează
-- Când detectează un browser pornind, îl închide automat
-- Copilul vede browser-ul deschizându-se pentru o secundă, apoi se închide
+### 2. **Browserele Rămân Deschise**
+- După setarea proxy-ului, browserele pot fi pornite normal
+- NU se închid automat sau constant
+- Browserele funcționează normal (pot naviga prin meniuri, setări, etc.)
+- Dar când încearcă să acceseze orice site web, primesc eroare proxy
 
 ### 3. **Restaurare Automată**
 - Când apeși **UNBLOCK** sau închizi programul
@@ -76,10 +77,11 @@ Interfața oferă:
 - ✅ Alte aplicații au net normal
 
 ### Limitări:
-- ⚠️ Browserele trebuie închise când aplici blocarea (programul le închide automat)
-- ⚠️ Un user tehnic poate reseta manual setările de proxy
-- ⚠️ Poate fi ocolit cu Safe Mode sau editare manuală a fișierelor de config
-- ⚠️ Nu funcționează la fel de bine ca Windows Firewall (care necesită admin)
+- ⚠️ Browserele trebuie închise o dată când aplici blocarea (pentru a încărca noile setări)
+- ⚠️ Un user tehnic poate reseta manual setările de proxy din browser
+- ⚠️ Poate fi ocolit prin resetare setări browser sau editare manuală fișiere config
+- ⚠️ Nu funcționează la fel de sigur ca Windows Firewall (care necesită admin)
+- ⚠️ Utilizatorul va vedea mesaje de eroare proxy în browser (nu este blocare invizibilă)
 
 ## 📁 Fișiere Incluse
 
